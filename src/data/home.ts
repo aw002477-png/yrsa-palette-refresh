@@ -19,7 +19,7 @@ export const principles = [
   },
 ] as const;
 
-export const homeStats = [
+export const homeStats: { value: string; label: string; accent?: boolean }[] = [
   { value: "500,000+", label: "data points gathered" },
   { value: "30,000+", label: "data panelists" },
   { value: "120+", label: "localities in oPt" },
@@ -29,7 +29,7 @@ export const homeStats = [
     label: "of service profits reinvested in the impactful ventures we build",
     accent: true,
   },
-] as const;
+];
 
 export const sectors = [
   { label: "Technology & Innovation", icon: "chip" },
